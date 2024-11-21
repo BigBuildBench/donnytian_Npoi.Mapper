@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Convention-based mapper between strong typed object and Excel data via NPOI.</Description>
+    <Authors>Donny Tian</Authors>
+    <AssemblyName>Npoi.Mapper</AssemblyName>
+    <PackageId>Npoi.Mapper</PackageId>
+    <PackageTags>Excel;XLS;XLSX;NPOI;object mapping;dynamic object mapping</PackageTags>
+    <PackageProjectUrl>https://donnytian.github.io/Npoi.Mapper/</PackageProjectUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>6.2.1</Version>
+    <PackageReleaseNotes>Support net472 and net6.0</PackageReleaseNotes>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>npoi.mapper.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworks>net472;net6.0</TargetFrameworks>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Label="SourceLink">
+    <!-- Optional: Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+    <!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <!-- Optional: Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+  
+</Project>
